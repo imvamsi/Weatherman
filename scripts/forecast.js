@@ -20,10 +20,3 @@ const getCity = async city => {
   const data = await response.json();
   return data[0];
 };
-
-getCity("chennai")
-  .then(data => getWeather(data.Key))
-  .then(data => console.log(data))
-  .catch(err => console.log("Varla da sunni"));
-
-//getCurrentConditions(206671);
