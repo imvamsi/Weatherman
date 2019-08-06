@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather forecast</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-muted text-center my-4">Weatherman</h1>
+      <form class="text-center text-muted my-4">
+        <label for="city"
+          >Enter the location to see the weather information</label
+        >
+        <input
+          type="text"
+          class="form-control p-3 text-center input-lg"
+          placeholder="Enter the location"
+        />
+      </form>
+      <div class="card shadow-lg rounded">
+        <img src="https://via.placeholder.com/400x300" class="card-img-top" />
+        <div class="icon bg-light text-center"></div>
+        <div class="text-muted text-center details">
+          <h5>City Name</h5>
+          <div class="my-3">Weather Condition</div>
+          <div class="display-4">
+            <span>temp</span>
+            <span>&deg; c</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/forecast.js"></script>
+  </body>
+</html>
